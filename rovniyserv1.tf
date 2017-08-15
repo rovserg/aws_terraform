@@ -21,7 +21,7 @@ resource "google_compute_instance" "default" {
 network_interface {
     network = "default"
     access_config {
-      nat_ip = "130.251.4.123"
+      nat_ip = "192.168.1.115"
         }
   }
 metadata {
