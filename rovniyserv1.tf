@@ -18,7 +18,8 @@ resource "google_compute_instance" "default" {
         }
     }
     disk 
-    scratch_disc {}
+    scratch_disc {
+}
     network_interface {network = "default"
     access_config = "default"
     
