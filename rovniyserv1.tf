@@ -14,16 +14,16 @@ resource "google_compute_instance" "default" {
 
     boot_disk {
         initialize_params {
-            image = "centOS7"
+            image = "https://console.cloud.google.com/storage/browser/agile-charger-6522/?project=rovniyserv1/CentOS7Minimal.iso"
         }
-    }
-    disk 
-    scratch_disc {
+
 }
-    network_interface {network = "default"
-    access_config = "default"
-    
-}
+network_interface {
+    network = "default"
+    access_config {
+      nat_ip = "130.251.4.123"
+        }
+  }
 metadata {
     foo="bar"
 }
