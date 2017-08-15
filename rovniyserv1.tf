@@ -22,6 +22,7 @@ network_interface {
     network = "default"
     access_config {
       nat_ip = "192.168.1.115"
+        adress = "192.168.1.115"
         }
   }
 metadata {
