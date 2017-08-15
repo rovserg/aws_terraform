@@ -17,9 +17,8 @@ resource "google_compute_instance" "default" {
             image = "centOS7"
         }
     }
-    disk 
-    scratch_disc {
-}
+
+     
     network_interface {network = "default"
     access_config = "default"
     
