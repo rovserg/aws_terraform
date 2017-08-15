@@ -14,7 +14,7 @@ resource "google_compute_instance" "default" {
 
     boot_disk {
         initialize_params {
-            image = "https://cloud.centos.org/centos/7/images/CentOS-7"
+            image = "https://cloud.centos.org/centos/7/images/CentOS-7-x86_64-Azure-1703.qcow2"
         }
 
 }
