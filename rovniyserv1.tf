@@ -14,7 +14,7 @@ resource "google_compute_instance" "default" {
 
     boot_disk {
         initialize_params {
-            image = "https://console.cloud.google.com/storage/browser/agile-charger-6522/?project=rovniyserv1/CentOS7Minimal.iso"
+            image = "https://storage.cloud.google.com/agile-charger-6522/CentOS7Minimal.iso?_ga=1.177714789.1912691654.1501062772"
         }
 
 }
