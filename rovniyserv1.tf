@@ -1,14 +1,14 @@
 provider "google" {
     credentials = "${file("rovniyserv1-e0f3d25c5d02.json")}"
     project     = "rovniyserv1"
-    region      = "us-central1"
+    region      = "us-east4"
 }
 
 resource "google_compute_instance" "default" {
     
     name         = "lamp"
-    machine_type = "n1-standard-1"
-    zone         = "us-central1-f"
+    machine_type = "n1-standard-4"
+    zone         = "us-east4-b"
 
     tags         = ["foo", "bar"]
 
@@ -21,7 +21,7 @@ resource "google_compute_instance" "default" {
 network_interface {
     network = "default"
     access_config {
-      nat_ip = "35.202.107.173"
+      nat_ip = "10.150.0.3"
               }
   }
 metadata {
