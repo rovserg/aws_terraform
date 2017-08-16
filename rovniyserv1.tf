@@ -14,14 +14,14 @@ resource "google_compute_instance" "default" {
 
     boot_disk {
         initialize_params {
-            image = "CentOS-cloud/CentOS-7"
+            image = "centos-cloud/centos-7"
         }
 
 }
 network_interface {
     network = "default"
     access_config {
-      nat_ip = "10.128.0.2"
+      nat_ip = "35.202.107.173"
               }
   }
 metadata {
