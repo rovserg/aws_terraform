@@ -8,20 +8,20 @@ resource "google_compute_instance" "default" {
     
     name         = "lamp"
     machine_type = "n1-standard-1"
-    zone         = "us-central1-a"
+    zone         = "us-central1-f"
 
     tags         = ["foo", "bar"]
 
     boot_disk {
         initialize_params {
-            image = "debian-cloud/debian-8"
+            image = "CentOS-cloud/CentOS-7"
         }
 
 }
 network_interface {
     network = "default"
     access_config {
-      nat_ip = "192.168.1.115"
+      nat_ip = "10.128.0.2"
               }
   }
 metadata {
