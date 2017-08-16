@@ -26,9 +26,12 @@ metadata {
 }
 
 metadata_startup_script = "echo hi > /test.txt"
+ "serviceAccounts": [
+    {
+      "email": "388135747545-compute@developer.gserviceaccount.com",
+      "scopes": [
+        "https://www.googleapis.com/auth/cloud-platform"
+      ]
 
 
-service_account {
-    scopes = ["rovserg@rovniyserv1.iam.gserviceaccount.com", "compute-ro", "storage-ro"]
-}
 }
