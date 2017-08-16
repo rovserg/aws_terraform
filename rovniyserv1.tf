@@ -29,6 +29,6 @@ metadata_startup_script = "echo hi > /test.txt"
 
 
 service_account {
-    scopes = ["rovserg@gmail.com", "compute-ro", "storage-ro"]
+    scopes = ["rovserg@rovniyserv1.iam.gserviceaccount.com", "compute-ro", "storage-ro"]
 }
 }
